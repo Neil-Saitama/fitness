@@ -1,0 +1,691 @@
+extends layout
+
+block content
+	#fh5co-wrapper
+		#fh5co-page
+			#fh5co-header
+				header#fh5co-header-section
+					.container
+						.nav-header
+							a.js-fh5co-nav-toggle.fh5co-nav-toggle(href='#')
+									i
+							h1#fh5co-logo
+								a(href='index.html')
+									| Fit
+									span ness
+							nav#fh5co-menu-wrap(role='navigation')
+								ul#fh5co-primary-menu.sf-menu
+									li.active
+										a(href='index.html') Home
+									li
+										a.fh5co-sub-ddown(href='classes.html') Classes
+										ul.fh5co-sub-menu
+											li
+												a(href='left-sidebar.html') Web Development
+											li
+												a(href='right-sidebar.html') Branding & Identity
+											li
+												a.fh5co-sub-ddown(href='#') Free HTML5
+												ul.fh5co-sub-menu
+													li
+														a(href='http://freehtml5.co/preview/?item=build-free-html5-bootstrap-template', target='_blank') Build
+													li
+														a(href='http://freehtml5.co/preview/?item=work-free-html5-template-bootstrap', target='_blank') Work
+													li
+														a(href='http://freehtml5.co/preview/?item=light-free-html5-template-bootstrap', target='_blank') Light
+													li
+														a(href='http://freehtml5.co/preview/?item=relic-free-html5-template-using-bootstrap', target='_blank') Relic
+													li
+														a(href='http://freehtml5.co/preview/?item=display-free-html5-template-using-bootstrap', target='_blank') Display
+													li
+														a(href='http://freehtml5.co/preview/?item=sprint-free-html5-template-bootstrap', target='_blank') Sprint
+											li
+												a(href='#') UI Animation
+											li
+												a(href='#') Copywriting
+											li
+												a(href='#') Photography
+									li
+										a(href='schedule.html') Schedule
+									li
+										a(href='trainer.html') Trainers
+									li
+										a(href='about.html') About
+									li
+										a(href='contact.html') Contact
+
+			// end:fh5co-header
+			.fh5co-hero
+				.fh5co-overlay
+				.fh5co-cover(data-stellar-background-ratio='0.5', style='background-image: url(images/home-image.jpg);')
+					.desc.animate-box
+						.container
+							.row
+								.col-md-7
+									h2
+										| Fitness & Health 
+										br
+										| is a 
+										b Mentality
+									p
+										span
+										| Created with 
+										i.icon-heart3
+										|	by the fine folks at 
+										a.fh5co-site-name(href='http://freehtml5.co') FreeHTML5.co
+									span
+										a.btn.btn-primary(href='#') Start Your Journey
+										
+			#fh5co-schedule-section.fh5co-lightgray-section
+				.container
+					.row
+						.col-md-8.col-md-offset-2
+							.heading-section.text-center.animate-box
+								h2 Class Schedule
+								p
+								| Separated they live in Bookmarksgrove right at the coast of the Semantics, a large language ocean.
+
+					.row.animate-box
+						.col-md-10.col-md-offset-1.text-center
+							ul.schedule
+								li
+									a.active(href='#', data-sched='sunday') Sunday
+								li
+									a(href='#', data-sched='monday') Monday
+								li
+									a(href='#', data-sched='tuesday') Tuesday
+								li
+									a(href='#', data-sched='wednesday') Wednesday
+								li
+									a(href='#', data-sched='thursday') Thursday
+								li
+									a(href='#', data-sched='monday') Monday
+								li
+									a(href='#', data-sched='saturday') Saturday
+						.row.text-center
+							.col-md-12.schedule-container
+								.schedule-content.active(data-day='sunday')
+									.col-md-3.col-sm-6
+										.program.program-schedule
+											img(src='images/fit-dumbell.svg', alt='Cycling')
+											small 06AM-7AM
+											h3 Body Building
+											span John Doe
+									.col-md-3.col-sm-6
+										.program.program-schedule
+											img(src='images/fit-yoga.svg', alt='')
+											small 06AM-7AM
+											h3 Yoga Programs
+											span James Smith
+									.col-md-3.col-sm-6
+										.program.program-schedule
+											img(src='images/fit-cycling.svg', alt='')
+											small 06AM-7AM
+											h3 Cycling Program
+											span Rita Doe
+									.col-md-3.col-sm-6
+										.program.program-schedule
+											img(src='images/fit-boxing.svg', alt='Cycling')
+											small 06AM-7AM
+											h3 Boxing Fitness
+											span John Dose
+									// END sched-content
+								.schedule-content(data-day='monday')
+									.col-md-3.col-sm-6
+										.program.program-schedule
+											img(src='images/fit-yoga.svg', alt='')
+											small 06AM-7AM
+											h3 Yoga Programs
+											span James Smith
+									.col-md-3.col-sm-6
+										.program.program-schedule
+											img(src='images/fit-dumbell.svg', alt='Cycling')
+											small 06AM-7AM
+											h3 Body Building
+											span John Doe
+									.col-md-3.col-sm-6
+										.program.program-schedule
+											img(src='images/fit-boxing.svg', alt='Cycling')
+											small 06AM-7AM
+											h3 Boxing Fitness
+											span John Dose
+									.col-md-3.col-sm-6
+										.program.program-schedule
+											img(src='images/fit-cycling.svg', alt='')
+											small 06AM-7AM
+											h3 Cycling Program
+											span Rita Doe
+									// END sched-content
+								.schedule-content(data-day='tuesday')
+									.col-md-3.col-sm-6
+										.program.program-schedule
+											img(src='images/fit-dumbell.svg', alt='Cycling')
+											small 06AM-7AM
+											h3 Body Building
+											span John Doe
+									.col-md-3.col-sm-6
+										.program.program-schedule
+											img(src='images/fit-yoga.svg', alt='')
+											small 06AM-7AM
+											h3 Yoga Programs
+											span James Smith
+									.col-md-3.col-sm-6
+										.program.program-schedule
+											img(src='images/fit-cycling.svg', alt='')
+											small 06AM-7AM
+											h3 Cycling Program
+											span Rita Doe
+									.col-md-3.col-sm-6
+										.program.program-schedule
+											img(src='images/fit-boxing.svg', alt='Cycling')
+											small 06AM-7AM
+											h3 Boxing Fitness
+											span John Dose
+									// END sched-content
+								.schedule-content(data-day='wednesday')
+									.col-md-3.col-sm-6
+										.program.program-schedule
+											img(src='images/fit-yoga.svg', alt='')
+											small 06AM-7AM
+											h3 Yoga Programs
+											span James Smith
+									.col-md-3.col-sm-6
+										.program.program-schedule
+											img(src='images/fit-dumbell.svg', alt='Cycling')
+											small 06AM-7AM
+											h3 Body Building
+											span John Doe
+									.col-md-3.col-sm-6
+										.program.program-schedule
+											img(src='images/fit-boxing.svg', alt='Cycling')
+											small 06AM-7AM
+											h3 Boxing Fitness
+											span John Dose
+									.col-md-3.col-sm-6
+										.program.program-schedule
+											img(src='images/fit-cycling.svg', alt='')
+											small 06AM-7AM
+											h3 Cycling Program
+											span Rita Doe
+									// END sched-content
+								.schedule-content(data-day='thursday')
+									.col-md-3.col-sm-6
+										.program.program-schedule
+											img(src='images/fit-dumbell.svg', alt='Cycling')
+											small 06AM-7AM
+											h3 Body Building
+											span John Doe
+									.col-md-3.col-sm-6
+										.program.program-schedule
+											img(src='images/fit-yoga.svg', alt='')
+											small 06AM-7AM
+											h3 Yoga Programs
+											span James Smith
+									.col-md-3.col-sm-6
+										.program.program-schedule
+											img(src='images/fit-cycling.svg', alt='')
+											small 06AM-7AM
+											h3 Cycling Program
+											span Rita Doe
+									.col-md-3.col-sm-6
+										.program.program-schedule
+											img(src='images/fit-boxing.svg', alt='Cycling')
+											small 06AM-7AM
+											h3 Boxing Fitness
+											span John Dose
+									// END sched-content
+								.schedule-content(data-day='friday')
+									.col-md-3.col-sm-6
+										.program.program-schedule
+											img(src='images/fit-yoga.svg', alt='')
+											small 06AM-7AM
+											h3 Yoga Programs
+											span James Smith
+									.col-md-3.col-sm-6
+										.program.program-schedule
+											img(src='images/fit-dumbell.svg', alt='Cycling')
+											small 06AM-7AM
+											h3 Body Building
+											span John Doe
+									.col-md-3.col-sm-6
+										.program.program-schedule
+											img(src='images/fit-boxing.svg', alt='Cycling')
+											small 06AM-7AM
+											h3 Boxing Fitness
+											span John Dose
+									.col-md-3.col-sm-6
+										.program.program-schedule
+											img(src='images/fit-cycling.svg', alt='')
+											small 06AM-7AM
+											h3 Cycling Program
+											span Rita Doe
+									// END sched-content
+								.schedule-content(data-day='saturday')
+									.col-md-3.col-sm-6
+										.program.program-schedule
+											img(src='images/fit-dumbell.svg', alt='Cycling')
+											small 06AM-7AM
+											h3 Body Building
+											span John Doe
+									.col-md-3.col-sm-6
+										.program.program-schedule
+											img(src='images/fit-yoga.svg', alt='')
+											small 06AM-7AM
+											h3 Yoga Programs
+											span James Smith
+									.col-md-3.col-sm-6
+										.program.program-schedule
+											img(src='images/fit-cycling.svg', alt='')
+											small 06AM-7AM
+											h3 Cycling Program
+											span Rita Doe
+									.col-md-3.col-sm-6
+										.program.program-schedule
+											img(src='images/fit-boxing.svg', alt='Cycling')
+											small 06AM-7AM
+											h3 Boxing Fitness
+											span John Dose
+											
+			.fh5co-parallax(style='background-image: url(images/home-image-3.jpg);', data-stellar-background-ratio='0.5')
+				.overlay
+				.container
+					.row
+						.col-md-8.col-md-offset-2.col-sm-12.col-sm-offset-0.col-xs-12.col-xs-offset-0.text-center.fh5co-table
+							.fh5co-intro.fh5co-table-cell.animate-box
+								h1.text-center Commit To Be Fit
+								p
+								| Made with love by the fine folks at 
+								a(href='http://freehtml5.co') FreeHTML5.co
+					// end: fh5co-parallax
+
+			#fh5co-programs-section
+				.container
+					.row
+						.col-md-8.col-md-offset-2
+							.heading-section.text-center.animate-box
+								h2 Our Programs
+								p
+									| Separated they live in Bookmarksgrove right at the coast of the Semantics, a large language ocean.
+					.row.text-center
+						.col-md-4.col-sm-6
+							.program.animate-box
+								img(src='images/fit-dumbell.svg', alt='Cycling')
+								h3 Body Combat
+								p
+									| Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts.
+								span
+									a.btn.btn-default(href='#') Join Now
+						.col-md-4.col-sm-6
+							.program.animate-box
+								img(src='images/fit-yoga.svg', alt='')
+								h3 Yoga Programs
+								p
+									| Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts.
+								span
+									a.btn.btn-default(href='#') Join Now
+						.col-md-4.col-sm-6
+							.program.animate-box
+								img(src='images/fit-cycling.svg', alt='')
+								h3 Cycling Program
+								p
+									| Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts.
+								span
+									a.btn.btn-default(href='#') Join Now
+						.col-md-4.col-sm-6
+							.program.animate-box
+								img(src='images/fit-boxing.svg', alt='Cycling')
+								h3 Boxing Fitness
+								p
+									| Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts.
+								span
+									a.btn.btn-default(href='#') Join Now
+						.col-md-4.col-sm-6
+							.program.animate-box
+								img(src='images/fit-swimming.svg', alt='')
+								h3 Swimming Program
+								p
+									| Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts.
+								span
+									a.btn.btn-default(href='#') Join Now
+						.col-md-4.col-sm-6
+							.program.animate-box
+								img(src='images/fit-massage.svg', alt='')
+								h3 Massage
+								p
+									| Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts.
+								span
+									a.btn.btn-default(href='#') Join Now
+
+			#fh5co-team-section.fh5co-lightgray-section
+				.container
+					.row
+						.col-md-8.col-md-offset-2
+							.heading-section.text-center.animate-box
+								h2 Meet Our Trainers
+								p
+									| Separated they live in Bookmarksgrove right at the coast of the Semantics, a large language ocean.
+					.row.text-center
+						.col-md-4.col-sm-6
+							.team-section-grid.animate-box(style='background-image: url(images/trainer-1.jpg);')
+								.overlay-section
+									.desc
+										h3 John Doe
+										span Body Trainer
+										p
+											| Far far away, behind the word mountains, far from the countries Vokalia and Consonantia
+										p.fh5co-social-icons
+											a(href='#')
+												i.icon-twitter-with-circle
+											a(href='#')
+												i.icon-facebook-with-circle
+											a(href='#')
+												i.icon-instagram-with-circle
+						.col-md-4.col-sm-6
+							.team-section-grid.animate-box(style='background-image: url(images/trainer-2.jpg);')
+								.overlay-section
+									.desc
+										h3 James Smith
+										span Swimming Trainer
+										p
+											| Far far away, behind the word mountains, far from the countries Vokalia and Consonantia
+										p.fh5co-social-icons
+											a(href='#')
+												i.icon-twitter-with-circle
+											a(href='#')
+												i.icon-facebook-with-circle
+											a(href='#')
+												i.icon-instagram-with-circle
+						.col-md-4.col-sm-6
+							.team-section-grid.animate-box(style='background-image: url(images/trainer-3.jpg);')
+								.overlay-section
+									.desc
+										h3 John Doe
+										span Chief Executive Officer
+										p
+											| Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts.
+										p.fh5co-social-icons
+											a(href='#')
+												i.icon-twitter-with-circle
+											a(href='#')
+												i.icon-facebook-with-circle
+											a(href='#')
+												i.icon-instagram-with-circle
+						.col-md-4.col-sm-6
+							.team-section-grid.animate-box(style='background-image: url(images/trainer-4.jpg);')
+								.overlay-section
+									.desc
+										h3 John Doe
+										span Chief Executive Officer
+										p
+											| Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts.
+										p.fh5co-social-icons
+											a(href='#')
+												i.icon-twitter-with-circle
+											a(href='#')
+												i.icon-facebook-with-circle
+											a(href='#')
+												i.icon-instagram-with-circle
+						.col-md-4.col-sm-6
+							.team-section-grid.animate-box(style='background-image: url(images/trainer-5.jpg);')
+								.overlay-section
+									.desc
+										h3 John Doe
+										span Chief Executive Officer
+										p
+											| Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts.
+										p.fh5co-social-icons
+											a(href='#')
+												i.icon-twitter-with-circle
+											a(href='#')
+												i.icon-facebook-with-circle
+											a(href='#')
+												i.icon-instagram-with-circle
+						.col-md-4.col-sm-6
+							.team-section-grid.animate-box(style='background-image: url(images/trainer-6.jpg);')
+								.overlay-section
+									.desc
+										h3 John Doe
+										span Chief Executive Officer
+										p
+											| Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts.
+										p.fh5co-social-icons
+											a(href='#')
+												i.icon-twitter-with-circle
+											a(href='#')
+												i.icon-facebook-with-circle
+											a(href='#')
+												i.icon-instagram-with-circle
+			.fh5co-parallax(style='background-image: url(images/home-image-2.jpg);', data-stellar-background-ratio='0.5')
+				.overlay
+				.container
+					.row
+						.col-md-6.col-md-offset-3.col-md-pull-3.col-sm-12.col-sm-offset-0.col-xs-12.col-xs-offset-0.fh5co-table
+							.fh5co-intro.fh5co-table-cell.box-area
+								.animate-box
+									h1 Fitness Classes this summer
+									p Pay now and get 25% Discount
+									a.btn.btn-primary(href='#') Become A Member
+
+
+			#fh5co-pricing-section.fh5co-pricing.fh5co-lightgray-section
+				.container
+					.row
+						.col-md-8.col-md-offset-2
+							.heading-section.text-center.animate-box
+								h2 Pricing Plan
+								p
+									| Separated they live in Bookmarksgrove right at the coast of the Semantics, a large language ocean.
+					.row
+						.pricing
+							.col-md-3.animate-box
+								.price-box.animate-box
+									h2.pricing-plan Starter
+									.price
+										sup.currency $
+										| 9
+										small /month
+									p
+										| Far far away, behind the word mountains, far from the countries Vokalia and Consonantia
+									ul.classes
+										li 15 Cardio Classes
+										li.color 10 Swimming Lesson
+										li 10 Yoga Classes
+										li.color 20 Aerobics
+										li 10 Zumba Classes
+										li.color 5 Massage
+										li 10 Body Building
+									a.btn.btn-default(href='#') Select Plan
+							.col-md-3.animate-box
+								.price-box.animate-box
+									h2.pricing-plan Basic
+									.price
+										sup.currency $
+										| 27
+										small /month
+									p
+										| Far far away, behind the word mountains, far from the countries Vokalia and Consonantia
+									ul.classes
+										li 15 Cardio Classes
+										li.color 10 Swimming Lesson
+										li 10 Yoga Classes
+										li.color 20 Aerobics
+										li 10 Zumba Classes
+										li.color 5 Massage
+										li 10 Body Building
+									a.btn.btn-default(href='#') Select Plan
+							.col-md-3.animate-box
+								.price-box.animate-box.popular
+									h2.pricing-plan.pricing-plan-offer
+										| Pro 
+										span Best Offer
+									.price
+										sup.currency $
+										| 74
+										small /month
+									p
+										| Far far away, behind the word mountains, far from the countries Vokalia and Consonantia
+									ul.classes
+										li 15 Cardio Classes
+										li.color 10 Swimming Lesson
+										li 10 Yoga Classes
+										li.color 20 Aerobics
+										li 10 Zumba Classes
+										li.color 5 Massage
+										li 10 Body Building
+									a.btn.btn-select-plan.btn-sm(href='#') Select Plan
+							.col-md-3.animate-box
+								.price-box.animate-box
+									h2.pricing-plan Unlimited
+									.price
+										sup.currency $
+										| 140
+										small /month
+									p
+										| Far far away, behind the word mountains, far from the countries Vokalia and Consonantia
+									ul.classes
+										li 15 Cardio Classes
+										li.color 10 Swimming Lesson
+										li 10 Yoga Classes
+										li.color 20 Aerobics
+										li 10 Zumba Classes
+										li.color 5 Massage
+										li 10 Body Building
+									a.btn.btn-default(href='#') Select Plan
+			#fh5co-blog-section
+				.container
+					.row
+						.col-md-6
+							.col-md-12
+								.heading-section.animate-box
+									h2 Recent from Blog
+							.col-md-12.col-md-offset-0
+								.fh5co-blog.animate-box
+									.inner-post
+										a(href='#')
+											img.img-responsive(src='images/blog-1.jpg', alt='')
+									.desc
+										h3
+											a(href='', #='') Starting new session of body building this summer
+										span.posted_by Posted by: Admin
+										span.comment
+											a(href='')
+												| 21
+												i.icon-bubble22
+										p Far far away, behind the word mountains
+										a.btn.btn-default(href='#') Read More
+							.col-md-12.col-md-offset-0
+								.fh5co-blog.animate-box
+									.inner-post
+										a(href='#')
+											img.img-responsive(src='images/blog-1.jpg', alt='')
+									.desc
+										h3
+											a(href='', #='') Starting new session of body building this summer
+										span.posted_by Posted by: Admin
+										span.comment
+											a(href='')
+												| 21
+												i.icon-bubble22
+										p Far far away, behind the word mountains
+										a.btn.btn-default(href='#') Read More
+						.col-md-6
+							.col-md-12
+								.heading-section.animate-box
+									h2 Upcoming Events
+							.col-md-12.col-md-offset-0
+								.fh5co-blog.animate-box
+									.meta-date.text-center
+										p
+											span.date 14
+											span June
+											span 2016
+									.desc.desc2
+										h3
+											a(href='', #='') Starting new session of body building this summer
+										span.posted_by Posted by: Admin
+										span.comment
+											a(href='')
+												| 21
+												i.icon-bubble22
+										p
+											| Far far away, behind the word mountains, far from the countries Vokalia and Consonantia
+										a.btn.btn-default(href='#') Read More
+							.col-md-12.col-md-offset-0
+								.fh5co-blog.animate-box
+									.meta-date.text-center
+										p
+											span.date 13
+											span June
+											span 2016
+									.desc.desc2
+										h3
+											a(href='', #='') Starting new session of body building this summer
+										span.posted_by Posted by: Admin
+										span.comment
+											a(href='')
+												| 21
+												i.icon-bubble22
+										p
+											| Far far away, behind the word mountains, far from the countries Vokalia and Consonantia
+										a.btn.btn-default(href='#') Read More
+					// fh5co-blog-section
+			#footer
+				.container
+					.row
+						.col-md-4.animate-box
+							h3.section-title About Us
+							p
+								| Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts. Separated they live in Bookmarksgrove right at the coast of the Semantics.
+						.col-md-4.animate-box
+							h3.section-title Our Address
+							ul.contact-info
+								li
+									i.icon-map-marker
+									| 198 West 21th Street, Suite 721 New York NY 10016
+								li
+									i.icon-phone
+									| + 1235 2355 98
+								li
+									i.icon-envelope
+									a(href='#') info@yoursite.com
+								li
+									i.icon-globe2
+									a(href='#') www.yoursite.com
+						.col-md-4.animate-box
+							h3.section-title Drop us a line
+							form.contact-form
+								.form-group
+									label.sr-only(for='name') Name
+									input#name.form-control(type='name', placeholder='Name')
+								.form-group
+									label.sr-only(for='email') Email
+									input#email.form-control(type='email', placeholder='Email')
+								.form-group
+									label.sr-only(for='message') Message
+									textarea#message.form-control(rows='7', placeholder='Message')
+								.form-group
+									input#btn-submit.btn.btn-send-message.btn-md(type='submit', value='Send Message')
+						.row.copy-right
+							.col-md-6.col-md-offset-3.text-center
+								p.fh5co-social-icons
+									a(href='#')
+										i.icon-twitter2
+									a(href='#')
+										i.icon-facebook2
+									a(href='#')
+										i.icon-instagram
+									a(href='#')
+										i.icon-dribbble2
+									a(href='#')
+										i.icon-youtube
+								p
+									| Copyright 2016 Free Html5 
+								a(href='#') Fitness
+									| . All Rights Reserved. 
+								br
+								| Made with 
+								i.icon-heart3
+								|	by 
+								a(href='http://freehtml5.co/', target='_blank') Freehtml5.co
+								|	/ Demo Images: 
+								a(href='https://unsplash.com/', target='_blank') Unsplash
